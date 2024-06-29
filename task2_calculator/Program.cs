@@ -33,12 +33,22 @@ public class Program
 
     public static void Main()
     {
+        int selection;
         var num = input();
         while (true)
         {
             Console.WriteLine($"Текущее значение: {Math.Round(num, 3)}");
             showMenu();
-            int selection = Convert.ToInt32(Console.ReadLine());
+
+            while (!int.TryParse(Console.ReadLine(), out selection))
+            {
+                Console.Clear();
+                Console.WriteLine("Ошибка! Нажмите любую кнопку...");
+                Console.ReadKey();
+                Console.Clear();
+                Console.WriteLine($"Текущее значение: {Math.Round(num, 3)}");
+                showMenu();
+            }
 
             switch (selection)
             {
