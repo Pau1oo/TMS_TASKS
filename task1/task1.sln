@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task1", "task1.csproj", "{43AE3CE6-387A-46F2-8A38-9DAB4C967E5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task1", "task1.csproj", "{43AE3CE6-387A-46F2-8A38-9DAB4C967E5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task2_calculator", "..\task2_calculator\task2_calculator.csproj", "{76357E94-7732-4D3E-82D9-56805DBDD702}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task2_calculator", "..\task2_calculator\task2_calculator.csproj", "{76357E94-7732-4D3E-82D9-56805DBDD702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task3_matrix", "..\task3_matrix\task3_matrix.csproj", "{AA989B42-E125-44F9-9293-7D1B47B966C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{76357E94-7732-4D3E-82D9-56805DBDD702}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76357E94-7732-4D3E-82D9-56805DBDD702}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76357E94-7732-4D3E-82D9-56805DBDD702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA989B42-E125-44F9-9293-7D1B47B966C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA989B42-E125-44F9-9293-7D1B47B966C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA989B42-E125-44F9-9293-7D1B47B966C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA989B42-E125-44F9-9293-7D1B47B966C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
