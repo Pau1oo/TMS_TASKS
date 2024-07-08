@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Text;
+using System.Text.RegularExpressions;
+using static System.Net.Mime.MediaTypeNames;
 
 class Program
 {
@@ -16,10 +18,12 @@ class Program
     public static string ReadTextFromFile(string path)
     {
         string text = String.Empty;
-        using(StreamReader reader = new StreamReader(path))
+        Console.Clear();
+        using (StreamReader reader = new StreamReader(path))
         {
             text = reader.ReadToEnd();
         }
+        Console.Clear();
         return text;
     }
 
@@ -80,7 +84,7 @@ class Program
     }
 
     public static void FindTheLongestWordAndFrequency(string[] words)
-    {
+    {                  
         string keyWord = words[0];
         int wordLength = words[0].Length;
         int frequency = 0;
@@ -121,11 +125,95 @@ class Program
 
         text = txt.ToString();
     }
+
+    public static void ShowInterrogativeAndExclamatorySentences(string[] sentences)
+    {
+        foreach(string sentence in sentences)
+        {
+            if(sentence.EndsWith('?'))
+            {
+                Console.Write($"{sentence} ");
+            }
+        }
+
+        foreach (string sentence in sentences)
+        {
+            if (sentence.EndsWith('!'))
+            {
+                Console.Write($"{sentence} ");
+            }
+        }
+        Console.ReadKey();
+        Console.Clear();
+    }
+
+    public static void ShowSentencesWithoutCommas(string[] sentences)
+    {
+        foreach(string sentence in sentences)
+        {
+            if(!sentence.Contains(','))
+            {
+                Console.Write($"{sentence} ");
+            } 
+        }
+        Console.ReadKey();
+        Console.Clear();
+    }
+
+    public static void ShowWordsWithSameStartEnd(string[] words)
+    {
+        foreach(string word in words)
+        {
+            if (word[0] == word[word.Length - 1] && word.Length != 1 && char.IsLetter(word[0]) && char.IsLetter(word[word.Length - 1]))
+            {
+                Console.WriteLine(word);
+            }
+        }
+        Console.ReadKey();
+        Console.Clear();
+    }
+
+    public static void FindWordWithMaxNumberOfDigits(string[] words)
+    {
+        int countOfDigits = 0;
+        int maxCount = 0;
+        foreach(string word in words)
+        {
+            for(int i = 0; i < word.Length; i++)
+            {
+                if (char.IsDigit(word[i]))
+                    countOfDigits++;
+            }
+            if(countOfDigits > maxCount)
+                maxCount = countOfDigits;
+            countOfDigits = 0;
+        }
+
+        if (maxCount == 0)
+            goto flag4;
+
+        foreach (string word in words)
+        {
+            for (int i = 0; i < word.Length; i++)
+            {
+                if (char.IsDigit(word[i]))
+                    countOfDigits++;
+            }
+            if(countOfDigits == maxCount)
+                Console.WriteLine(word);
+            countOfDigits = 0;
+        }
+        flag4:
+        Console.ReadKey();
+        Console.Clear();
+    }
+
     static void Main()
     {
         string text = ReadText();
-        string[] words = text.Split(' ');
-        string[] sentences = text.Split('?','!','.');
+        flag3:
+        string[] words = text.Split(new char[] { ',', ' ', ':', '"', '?', '!', '.', '(', ')' }, StringSplitOptions.RemoveEmptyEntries);
+        string[] sentences = Regex.Split(text, @"(?<=[.!?])\s+");
         int selection;
 
         while (true)
@@ -151,7 +239,8 @@ class Program
                     break;
 
                 case 2:
-                    
+                    Console.Clear();
+                    FindWordWithMaxNumberOfDigits(words);
                     break;
 
                 case 3:
@@ -162,22 +251,25 @@ class Program
                 case 4:
                     Console.Clear();
                     ReplaceNums(ref text);
-                    break;
+                    goto flag3;
 
                 case 5:
-                    
+                    Console.Clear();
+                    ShowInterrogativeAndExclamatorySentences(sentences);
                     break;
 
                 case 6:
-                    
+                    Console.Clear();
+                    ShowSentencesWithoutCommas(sentences);
                     break;
 
                 case 7:
-                    
+                    Console.Clear();
+                    ShowWordsWithSameStartEnd(words);
                     break;
 
-                    case 8:
-                        Environment.Exit(0);
+                case 8:
+                    Environment.Exit(0);
                     break;
 
                 default:
@@ -190,3 +282,6 @@ class Program
         }
     }
 }
+
+//Text for testing
+/*Hello! This is a sample text with several features. Can you find the words with the most numbers? For instance, consider the word "exam2023ple"! This task requires some careful consideration. In the middle of our example, let's place some numbers: 12345, 67890, and even "abc123def". What about the longest word here? Maybe it's "consideration", appearing multiple times? Or is it "supercalifragilisticexpialidocious", which shows up only once? By the way, let's replace numbers: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Also, sort the sentences: Is this a question? Yes, it is! No, it isn't. Wow! Look at that! Should we sort them too? Definitely! Finally, filter sentences: Here's a sentence without commas. And here's one with, just for comparison. Look for words like "radar" or "level", which start and end with the same letter. They're interesting, aren't they?*/
