@@ -11,19 +11,9 @@
         this.weight = weight;
     }
 
-    public Phone(string number, string model)
-    {
-        this.number = number;
-        this.model = model;
-        weight = 0;
-    }
+    public Phone(string number, string model) : this(number, model, 0) { }
 
-    public Phone()
-    {
-        number = "Неизвестно";
-        model = "Неизвестно";
-        weight = 0;
-    }
+    public Phone() : this("Неизвестно", "Неизвестно", 0) { }
 
     public static void receiveCall(string name)
     {
