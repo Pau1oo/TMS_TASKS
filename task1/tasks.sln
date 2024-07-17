@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task1", "task1.csproj", "{43AE3CE6-387A-46F2-8A38-9DAB4C967E5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task1", "..\task1\task1.csproj", "{43AE3CE6-387A-46F2-8A38-9DAB4C967E5B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task2_calculator", "..\task2_calculator\task2_calculator.csproj", "{76357E94-7732-4D3E-82D9-56805DBDD702}"
 EndProject
@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task5", "..\task5\task5.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task5_additional", "..\task5_additional\task5_additional.csproj", "{E0DA6CE2-65BA-4FB2-BAE6-1181B76DE6EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task6_ProductInventory", "..\task6_ProductInventory\task6_ProductInventory.csproj", "{6A94C2E8-2637-44F9-834B-98223BB2B22F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task6_ProductInventory", "..\task6_ProductInventory\task6_ProductInventory.csproj", "{6A94C2E8-2637-44F9-834B-98223BB2B22F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
