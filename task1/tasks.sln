@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task6_ProductInventory", ".
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task6_ProductInventoryStruct", "..\task6_ProductInventoryStruct\task6_ProductInventoryStruct.csproj", "{C2AFF4A7-1214-472A-BBF2-0CCB4ADC4088}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task7", "..\task7\task7.csproj", "{3F59385B-A137-4290-A5C0-A32D88481120}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task7", "..\task7\task7.csproj", "{3F59385B-A137-4290-A5C0-A32D88481120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task8", "..\task8\task8.csproj", "{C7ED3416-7C3E-47A0-867A-CA813057A930}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{3F59385B-A137-4290-A5C0-A32D88481120}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F59385B-A137-4290-A5C0-A32D88481120}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F59385B-A137-4290-A5C0-A32D88481120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7ED3416-7C3E-47A0-867A-CA813057A930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7ED3416-7C3E-47A0-867A-CA813057A930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7ED3416-7C3E-47A0-867A-CA813057A930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7ED3416-7C3E-47A0-867A-CA813057A930}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
