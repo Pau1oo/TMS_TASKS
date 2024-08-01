@@ -19,17 +19,13 @@ namespace task8
 
         public void Drive(int distance)
         {
-            int tempDistance = distance;
-            int tempFuelValue = FuelValue;
-
-            while(distance > 0)
+            while (distance > 0)
             {
                 if(FuelValue == 0)
                 {
                     Console.WriteLine("Введите кол-во литров для заправки: ");
                     int.TryParse(Console.ReadLine(), out int fuel);
                     Refuel(fuel);
-                    tempFuelValue = FuelValue;
                     Console.Clear();
                 }
                 Console.WriteLine($"Расстояние: {distance} км | Кол-во топлива: {FuelValue} л");
