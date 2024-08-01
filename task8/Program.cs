@@ -38,7 +38,7 @@ class Program
 
     public static void task3()
     {
-        SportsCar car = new SportsCar(0, 13);
+        SportsCar car = new SportsCar(5, 13);
         Console.WriteLine("Какое расстояние нужно проехать?(км):");
         int.TryParse(Console.ReadLine(), out int distance);
         car.Drive(distance);
