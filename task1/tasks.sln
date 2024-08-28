@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task10", "..\task10\task10.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task11", "..\task11\task11.csproj", "{8A4EA024-AD1A-4E90-A6F1-6E8CDF74EA59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task12_serialization", "..\task12_serialization\task12_serialization.csproj", "{B4F05377-3CBB-49FB-8ED1-CF71DFAA1EE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task12_serialization", "..\task12_serialization\task12_serialization.csproj", "{B4F05377-3CBB-49FB-8ED1-CF71DFAA1EE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task15_MVC", "..\task15_MVC\task15_MVC.csproj", "{CB09085D-AA65-4B87-B219-225381FEDD09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{B4F05377-3CBB-49FB-8ED1-CF71DFAA1EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4F05377-3CBB-49FB-8ED1-CF71DFAA1EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4F05377-3CBB-49FB-8ED1-CF71DFAA1EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB09085D-AA65-4B87-B219-225381FEDD09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB09085D-AA65-4B87-B219-225381FEDD09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB09085D-AA65-4B87-B219-225381FEDD09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB09085D-AA65-4B87-B219-225381FEDD09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
